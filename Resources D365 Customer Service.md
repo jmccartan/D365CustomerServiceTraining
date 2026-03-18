@@ -1,0 +1,138 @@
+# Dynamics 365 Customer Service (D365 CS) — Technical Learning & Reference Hub
+
+A curated list of **public** blogs, documentation, samples, tools, and communities for **technical practitioners** working with **Dynamics 365 Customer Service** (developers, solution architects, admins, and DevOps/ALM folks).
+
+> Tip: If you’re building or extending D365 Customer Service, you’ll spend a lot of time in **Dataverse**, **model-driven apps**, **Omnichannel**, and **Channel Integration Framework (CIF)**—those resources are included here as “core platform” dependencies.
+
+---
+
+## Table of Contents
+- [Official Microsoft Docs & Training (Start Here)](#official-microsoft-docs--training-start-here)
+- [Customer Service Workspace, Omnichannel & Agent Experience](#customer-service-workspace-omnichannel--agent-experience)
+- [Developer & Extensibility (Dataverse + Model-driven)](#developer--extensibility-dataverse--model-driven)
+- [Channel Integration Framework (CIF) & CTI Integrations](#channel-integration-framework-cif--cti-integrations)
+- [ALM / DevOps / Governance](#alm--devops--governance)
+- [Sample Code & Reference Implementations](#sample-code--reference-implementations)
+- [Tools You’ll Actually Use](#tools-youll-actually-use)
+- [Community, Blogs, and Ongoing Updates](#community-blogs-and-ongoing-updates)
+
+---
+
+## Official Microsoft Docs & Training (Start Here)
+
+- [Dynamics 365 Customer Service documentation (home)](https://learn.microsoft.com/en-us/dynamics365/customer-service/) — The primary landing page for features, configuration, and implementation guidance. /overview)  
+- [Training for Dynamics 365 Customer Service](https://learn.microsoft.com/en-us/training/dynamics365/customer-service) — Microsoft learning paths/modules; good for structured ramp-up for technical consultants too. [3](https://learn.microsoft.com/en-us/training/dynamics365/customer-service)  
+- [Get started with Dynamics 365 Customer Service (module)](https://learn.microsoft.com/en-us/training/modules/get-started-with-dynamics-365-for-customer-service/) — Quick grounding in core concepts (cases, queues, SLAs, etc.). [4](https://learn.microsoft.com/en-us/training/modules/get-started-with-dynamics-365-for-customer-service/)  
+- [Dynamics 365 documentation (product index)](https://learn.microsoft.com/en-us/dynamics365/) — Useful when you need cross-app references (Sales/Field Service/Customer Insights + platform). [5](https://learn.microsoft.com/en-us/dynamics365/)  
+
+---
+
+## Customer Service Workspace, Omnichannel & Agent Experience
+
+- [Copilot Service workspace overview](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/csw-overview) — Multi-session, tabbed agent UX and productivity patterns; foundational for modern CS deployments. [6](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/csw-overview)  
+- [Customer Service Hub basics](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/customer-service-hub-user-guide-basics) — Even technical people benefit from understanding the “default” hub experience and navigation. [7](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/customer-service-hub-user-guide-basics)  
+- [Customer Service workspace in a day (PDF lab)](https://download.microsoft.com/download/3/4/e/34e153c8-adff-45ae-b48d-356922f82097/CustomerServiceworkspace_training.pdf) — Hands-on style training deck; good for internal enablement workshops. [8](https://download.microsoft.com/download/3/4/e/34e153c8-adff-45ae-b48d-356922f82097/CustomerServiceworkspace_training.pdf)  
+- [Introduction to Omnichannel for Customer Service](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/introduction-omnichannel) — Capabilities, setup concepts, and what to expect when enabling chat/voice/SMS etc. [9](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/introduction-omnichannel)  
+- [Get started with Omnichannel (training module)](https://learn.microsoft.com/en-us/training/modules/getting-started-omnichannel/) — A structured entry point into omnichannel capabilities and terminology. [10](https://learn.microsoft.com/en-us/training/modules/getting-started-omnichannel/)  
+- [Work with Customer Service Omnichannel (training path)](https://learn.microsoft.com/en-us/training/paths/work-customer-service-omnichannel/) — More comprehensive learning path; useful for team onboarding. [11](https://learn.microsoft.com/en-us/training/paths/work-customer-service-omnichannel/)  
+- [Developer tools for Customer Service (Omnichannel dev)](https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/omnichannel-developer) — Developer entry point for Omnichannel extensibility patterns. [12](https://learn.microsoft.com/en-us/dynamics365/customer-service/develop/omnichannel-developer)  
+- [Best practices to use Omnichannel for Customer Service](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/best-practices) — Operational and configuration best practices (good pre-production checklist). [13](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/best-practices)  
+
+---
+
+## Developer & Extensibility (Dataverse + Model-driven)
+
+These resources aren’t “Customer Service-only,” but they are **essential** because D365 CS is built on **Dataverse** and **model-driven apps**.
+
+- [Microsoft Dataverse Developer Guide (overview)](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/overview) — Core developer concepts: plugins, workflows, security model, extensibility. [14](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/overview)  
+- [Use the Microsoft Dataverse Web API (overview)](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview) — Web API fundamentals for integrations and automation. [15](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/overview)  
+- [Developer tools for model-driven apps](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/developer-tools) — Great roundup of tooling that helps you build/debug/inspect model-driven behavior. [16](https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/developer-tools)  
+- [Microsoft Dataverse archives (Power Platform blog)](https://www.microsoft.com/en-us/power-platform/blog/product/microsoft-dataverse/) — Official announcements and deep dives that often impact D365 CS indirectly. [17](https://www.microsoft.com/en-us/power-platform/blog/product/microsoft-dataverse/)  
+- [Power Platform Developer Blog — Dataverse tag](https://devblogs.microsoft.com/powerplatform/tag/microsoft-dataverse/) — Pro-dev oriented posts that frequently include patterns you’ll reuse in CS projects. [18](https://devblogs.microsoft.com/powerplatform/tag/microsoft-dataverse/)  
+
+**Independent pro-dev references (high signal):**
+- [Develop 1 (Scott Durow) blog](https://scottdurow.develop1.net/public/) — Excellent real-world Dataverse/model-driven app dev patterns and tooling ideas. [19](https://scottdurow.develop1.net/public/)  
+- [Scott Durow (Microsoft Developer profile)](https://developer.microsoft.com/en-us/advocates/scott-durow) — A convenient hub to find his recent content and focus areas. [20](https://developer.microsoft.com/en-us/advocates/scott-durow)  
+- [Scott Durow on YouTube](https://www.youtube.com/c/ScottDurow) — In-depth platform videos (often the fastest way to learn tricky concepts). [21](https://www.youtube.com/c/ScottDurow)  
+- [Getting started as a Dynamics 365 CE Developer](https://community.dynamics.com/crm/b/365lyf/posts/getting-started-as-a-dynamics-365-ce-developer) — Practical orientation for devs new to CE/Dataverse ecosystem. [22](https://community.dynamics.com/crm/b/365lyf/posts/getting-started-as-a-dynamics-365-ce-developer)  
+- [How to Write a Dynamics 365 CE Plugin (step-by-step)](https://www.optrua.com/post/how-to-write-a-dynamics-365-ce-plugin) — A full walkthrough you can use to onboard new devs. [23](https://www.optrua.com/post/how-to-write-a-dynamics-365-ce-plugin)  
+- [Dynamics 365 CE: Development Best Practices (FoxTako)](https://blogs.foxtako.com/best_practices_for_dynamics_365_ce) — Solid checklist-style guidance that maps well to CS implementations. [24](https://blogs.foxtako.com/best_practices_for_dynamics_365_ce)  
+
+---
+
+## Channel Integration Framework (CIF) & CTI Integrations
+
+If you integrate telephony/CTI, softphones, or custom agent panels, CIF is usually the foundation.
+
+- [Channel Integration Framework guide](https://learn.microsoft.com/en-us/dynamics365/channel-integration-framework/channel-integration-framework) — Start here for CIF concepts and fundamentals. [25](https://learn.microsoft.com/en-us/dynamics365/channel-integration-framework/channel-integration-framework)  
+- [Channel Integration Framework 2.0 overview](https://learn.microsoft.com/en-us/dynamics365/channel-integration-framework/v2/administer/overview-channel-integration-framework) — CIF v2 specifics (important for multi-session apps like CS workspace). [26](https://learn.microsoft.com/en-us/dynamics365/channel-integration-framework/v2/administer/overview-channel-integration-framework)  
+- [CIF guide (MicrosoftDocs mirror on GitHub)](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/blob/main/ce/channel-integration-framework/channel-integration-framework.md) — Handy if you prefer browsing docs in GitHub or referencing via PRs/issues. [27](https://github.com/MicrosoftDocs/dynamics-365-customer-engagement/blob/main/ce/channel-integration-framework/channel-integration-framework.md)  
+
+---
+
+## ALM / DevOps / Governance
+
+Treat Customer Service like a serious software product: solutions, pipelines, environments, and source control.
+
+- [Application lifecycle management (ALM) with Microsoft Power Platform](https://learn.microsoft.com/en-us/power-platform/alm/) — The canonical ALM guidance (environments, solutions, automation). [28](https://learn.microsoft.com/en-us/power-platform/alm/)  
+- [ALM docs (MicrosoftDocs mirror on GitHub)](https://github.com/MicrosoftDocs/power-platform/blob/main/power-platform/alm/overview-alm.md) — Useful for linking in internal runbooks or tracking doc changes. [29](https://github.com/MicrosoftDocs/power-platform/blob/main/power-platform/alm/overview-alm.md)  
+- [Deploy with confidence: Power Platform pipelines & ALM (lab PDF)](https://microsoft.github.io/mcs-labs/assets/pdfs/pipelines-and-source-control.pdf) — Hands-on style lab guide (pipelines, source control, deployment). [30](https://microsoft.github.io/mcs-labs/assets/pdfs/pipelines-and-source-control.pdf)  
+
+---
+
+## Sample Code & Reference Implementations
+
+- [Dynamics365-Apps-Samples (GitHub)](https://github.com/microsoft/Dynamics365-Apps-Samples) — The main Microsoft sample repo; includes patterns you’ll reuse in CS projects. [31](https://github.com/microsoft/Dynamics365-Apps-Samples)  
+- [Customer Service component library (guidance)](https://learn.microsoft.com/en-us/dynamics365/guidance/resources/component-library) — A library of reusable components/patterns to accelerate implementations. [32](https://learn.microsoft.com/en-us/dynamics365/guidance/resources/component-library)  
+- [Dynamics 365 Customer Service WEM samples (GitHub)](https://github.com/microsoft/dynamics365-customerservice-wem-samples) — Event-driven / near real-time export integration examples for CS scenarios. [33](https://github.com/microsoft/dynamics365-customerservice-wem-samples)  
+- [Smart Assist Bot sample (README)](https://github.com/microsoft/Dynamics365-Apps-Samples/blob/master/customer-service/omnichannel/smart-assist-bot/README.md) — Example of building a custom smart bot for Omnichannel workflows. [34](https://github.com/microsoft/Dynamics365-Apps-Samples/blob/master/customer-service/omnichannel/smart-assist-bot/README.md)  
+
+---
+
+## Tools You’ll Actually Use
+
+- [XrmToolBox (home)](https://www.xrmtoolbox.com/) — The Swiss Army knife for Dataverse/D365 troubleshooting and productivity. [35](https://www.xrmtoolbox.com/)  
+- [XrmToolBox documentation](https://www.xrmtoolbox.com/documentation/) — Usage + how to develop your own XrmToolBox tools. [36](https://www.xrmtoolbox.com/documentation/)  
+- [XrmToolBox — for developers](https://xrmtoolbox.microsoftcrmportals.com/documentation/for-developers/) — Dev-specific guidance for building plugins/tools for XrmToolBox. [37](https://xrmtoolbox.microsoftcrmportals.com/documentation/for-developers/)  
+- [XrmToolBox GitHub README](https://github.com/MscrmTools/XrmToolBox/blob/master/README.md) — Repo entry point; useful for contributing or understanding extensibility. [38](https://github.com/MscrmTools/XrmToolBox/blob/master/README.md)  
+
+---
+
+## Community, Blogs, and Ongoing Updates
+
+**Microsoft & official channels**
+- [Dynamics 365 Customer Service — Microsoft Product Blog](https://www.microsoft.com/en-us/dynamics-365/blog/product/dynamics-365-customer-service/) — Official announcements and feature highlights. [39](https://www.microsoft.com/en-us/dynamics-365/blog/product/dynamics-365-customer-service/)  
+- [Microsoft Dynamics 365 Community (home)](https://community.dynamics.com/) — Forums + community Q&A; great for edge-case troubleshooting. [40](https://community.dynamics.com/)  
+- [Dynamics 365 Community “Team Blog”](https://community.dynamics.com/365/b/365teamblog) — Broad D365 topics (integration/Dataverse/general) that often affect CS projects. [41](https://community.dynamics.com/365/b/365teamblog)  
+
+**Independent communities / aggregators**
+- [MSDynamicsWorld](https://msdynamicsworld.com/) — Independent news, analysis, and practical articles across Dynamics. [42](https://msdynamicsworld.com/)  
+- [Dynamics User Group (DUG)](https://dynamicsusergroup.com/) — User groups, events, and community knowledge sharing. [43](https://dynamicsusergroup.com/)  
+- [Dynamics User Group (DynamicsUser.net)](https://www.dynamicsuser.net/) — Additional community hub and learning resources. [44](https://www.dynamicsuser.net/)  
+- [Power Community — Customer Service category](https://www.powercommunity.com/category/dynamics-365-community/customer-service/) — Community articles and bootcamp-style content. [45](https://www.powercommunity.com/category/dynamics-365-community/customer-service/)  
+- [D365Hub — Customer Service articles](https://d365hub.com/Posts/dynamics-365-customer-service?type=Article) — Aggregated posts focused on Customer Service. [46](https://d365hub.com/Posts/dynamics-365-customer-service?type=Article)  
+
+**Stay current (release notes / roadmap)**
+- [Dynamics 365 Release Plans (Customer Service filter)](https://releaseplans.microsoft.com/en-us/?app=Customer+Service) — The best place to track what’s shipping and what’s coming. [47](https://releaseplans.microsoft.com/en-us/?app=Customer+Service)  
+- [Microsoft Release planner (Customer Service “coming soon”)](https://experience.dynamics.com/releaseplans/?app=Customer+Service&status=coming-soon) — Another official view of upcoming features and wave planning. [48](https://experience.dynamics.com/releaseplans/?app=Customer+Service&status=coming-soon)  
+
+---
+
+## How to Use This Page (Suggested Learning Path)
+
+1. **Start with official docs** (Customer Service + implementation overview).  
+2. Add **workspace/omnichannel** if you support multi-session agents or digital channels.  
+3. Deepen with **Dataverse developer guide + Web API** for customization/integration.  
+4. Adopt **ALM guidance** early (solutions, environments, pipelines).  
+5. Use **samples** to accelerate: copy patterns, don’t reinvent them.  
+6. Keep up with **release plans** (CS changes frequently—design with change in mind).
+
+---
+
+### Contributing
+If you want, add a PR with:
+- A short description of the resource
+- Why it’s valuable for Customer Service specifically
+- Any prerequisites (Dataverse, Omnichannel, CIF, etc.)
+
+---
